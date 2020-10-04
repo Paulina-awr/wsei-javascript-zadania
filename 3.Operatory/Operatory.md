@@ -2,14 +2,36 @@
 
 W konsoli stwórz dwie zmienne i przypisz do nich dwie wartości boolean. Porównaj je za pomocą odpowiedniego operatora.
 
+let hot = true;
+let cold = false;
+
+console.log(hot == cold);
+
+
+
 #### Zadanie 2
 
 W konsoli stwórz trzy zmienne. Dwie niech przechowują dowolne liczby, a trzecia o nazwie ```moduloResult``` niech przechowuje liczbę 0. Oblicz resztę z dzielenia (modulo) tych liczb i zapisz wynik w zmiennej ```moduloResult```.
 Wypisz zmienną ```moduloResult``` w konsoli. 
 
+let first = 7;
+let second = 5;
+let moduloResult = 0;
+
+moduloResult = first % second;
+console.log(moduloResult);
+
+
 #### Zadanie 3
 W konsoli stwórz trzy zmienne. Dwie niech przechowują dowolne stringi, a jedna o nazwie ```stringsResult```, niech przechowuje pusty string np. ```let stringsResult = ""```
 Połącz stringi za pomocą konkatenacji i zapisz wynik w zmiennej ```stringsResult``` oraz wypisz go w konsoli.
+
+var someNumber = "42";
+var someString = "345";
+let stringsResult = ""
+stringsResult = someNumber + someString
+console.log(stringsResult);
+
 
 #### Zadanie 4
 W konsoli stwórz dwie zmienne:
@@ -18,6 +40,11 @@ W konsoli stwórz dwie zmienne:
 var someNumber = 425;
 var someString = "425";
  ```
+ var someNumber = 425;
+var someString = "425";
+console.log(someNumber == someString);    Jest TRUE, poniewaz zmienne maja taka sama wartosc.
+console.log(someNumber === someString);    Jest FALSE , poniewaz maja dwa rozne typy. Jedna zmienna jest int, a druga zmienna string.
+
 
 Porównaj te zmienne za pomocą operatorów ```==``` oraz ```===```.
 Wypisz wyniki w konsoli. Opowiedz grupie o wynikach
