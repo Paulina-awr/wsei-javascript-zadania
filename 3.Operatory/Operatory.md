@@ -60,7 +60,28 @@ Wypisz jej wartość w konsoli, a następnie:
 * za pomocą dekrementacji zmniejsz wartość zmiennej ```counter```
 * wypisz ją w konsoli.
 
+let counter = 30;
+
+console.log(counter);
+
+counter++;
+
+console.log(counter);
+
+counter--;
+
+console.log(counter);
 
 #### Zadanie 6
 
 W konsoli stwórz trzy zmienne. Dwie niech przechowują dowolne liczby, a jedna o nazwie ```result```, niech przechowuje ```null```. Sprawdź czy liczba pierwsza jest większa od drugiej za pomocą odpowiedniego operatora i zapisz wynik w zmiennej ```result```. Wypisz tą zmienną w konsoli.
+
+let variable_1 = 40;
+let variable_2 = 23;
+let result = null;
+
+result = variable_1 > variable_2;
+
+console.log(result);
+
+
