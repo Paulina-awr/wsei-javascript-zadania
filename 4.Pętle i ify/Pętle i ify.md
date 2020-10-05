@@ -136,6 +136,20 @@ b)
  * * * *
 * * * * *
 ```
+for(let i=0; i<= 4; i++){
+    let star = '';
+    for(let k = 1; k <= 4 - i; k++){
+     
+      star += " ";
+    };
+    for(let j=0; j<=i; j++) {
+        
+        star += " *";
+    };
+    
+    console.log(star);
+  };
+
 
 c)
 ```
@@ -145,6 +159,21 @@ c)
  *******
 *********
 ```
+for ( let i = 0; i < 5 ; i++ ) {
+      let star = '*';
+      let space = ' ';
+
+       for ( let j = 1; j <= i; j++ ) {
+            star = star + '**';            
+        }
+           
+        let spacesBefore = space.repeat(5-i-1);
+        star = spacesBefore + star;
+        console.log(star);
+    }
+
+
+    
 
 d)
 ```
