@@ -10,3 +10,17 @@ var myfunc = setInterval(function () {
         clearInterval(myfunc);
     }
 }, 3000);
+
+
+// zadanie 2
+var myArr = [2, 4, 6, 8, 10];
+
+setTimeout(function () {
+    console.log(myArr);
+}, 2000);
+
+setTimeout(function () {
+    for (var i = 0; i < myArr.length; ++i) {
+        console.log("value at index " + i + " is: " + myArr[i]);
+    }
+}, 3000);
