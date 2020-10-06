@@ -2,18 +2,18 @@
 
 Wypisuj w konsoli co 3 sekundy napis "Cześć po raz " oraz liczbę powtóżeń. Jeśli Licznik dojdzie do 15 zatrzymaj go. 
 
-var i=0;
+```
+var i = 0;
 
-var myfunc = setInterval(function(){
-
+var myfunc = setInterval(function () {
     i = i + 1;
-    console.log('Czesc na raz'); 
+    console.log(i, "Czesc na raz");
 
-    if(i==15) {
+    if (i == 15) {
         clearInterval(myfunc);
     }
-
 }, 3000);
+```
 
 ### Zadanie 2
 
