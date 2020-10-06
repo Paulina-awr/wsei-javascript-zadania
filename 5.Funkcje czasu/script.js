@@ -1,3 +1,5 @@
+# zadanie 1
+
 var i = 0;
 
 var myfunc = setInterval(function () {
