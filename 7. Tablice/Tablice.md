@@ -2,6 +2,11 @@
 
 Stwórz tablicę z dowolnymi elementami a następnie wypisz je w konsoli.
 
+```
+myArr = [2, 4, 6, "Krakow", "Warszawa", 'Poznan']
+console.log('my array is', myArr)
+```
+
 #### Zadanie 2
 
 Stwórz tablicę z dowolnymi elementami a następnie w konsoli wypisz:
@@ -12,6 +17,26 @@ Stwórz tablicę z dowolnymi elementami a następnie w konsoli wypisz:
 4. Co drugi element
 5. Wszystkie stringi
 6. Wszystkie numbery 
+
+```
+myArr = [2, 4, 6, "Krakow", "Warszawa", 'Poznan']
+
+// 1. Pierszy i drugi element
+console.log("my first and second elements are:", 
+            myArr[0] + ' and ' + myArr[1])
+// 2. Ostatni element
+console.log("my last element is: ", myArr[myArr.length-1])
+// 3. Wszystkie elementy
+console.log("All elements in the array: ", myArr)
+// 4. Co drugi element
+newArr = myArr.filter(function(value, index, Arr) {
+    return index % 2 == 0;
+});
+console.log("Every second elements are", newArr)
+// 5. Wszystkie stringi
+
+// 6. Wszystkie numbery 
+```
 
 #### Zadanie 3
 
