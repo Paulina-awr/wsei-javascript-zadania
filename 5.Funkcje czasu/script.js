@@ -1,4 +1,4 @@
-# zadanie 1
+// zadanie 1
 
 var i = 0;
 
