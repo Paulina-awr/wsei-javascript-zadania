@@ -19,7 +19,7 @@ Stwórz tablicę z dowolnymi elementami a następnie w konsoli wypisz:
 6. Wszystkie numbery 
 
 ```
-myArr = [2, 4, 6, "Krakow", "Warszawa", 'Poznan']
+let myArr = [2, 4, 6, "Krakow", "Warszawa", 'Poznan']
 
 // 1. Pierszy i drugi element
 console.log("my first and second elements are:", 
@@ -34,7 +34,7 @@ newArr = myArr.filter(function(value, index, Arr) {
 });
 console.log("Every second elements are", newArr)
 // 5. Wszystkie stringi
-myArr = [2, 4, 6, "Krakow", "Warszawa", "Poznan"];
+let myArr = [2, 4, 6, "Krakow", "Warszawa", "Poznan"];
 emptyArr = []
 var i;
 for (i = 0; i < myArr.length; i++) {
@@ -70,55 +70,53 @@ Stwórz tablicę tylko z elementami typu number. W konsoli wypisz:
 
 * nie rozpatrujemy warunków brzegowych. Liczby nie powtarzają się.
 ```
-let myArr = [2, 4, 6, 45, 57, 103]
+let myArr = [1, 5, 6, 8, 11, 12, 13, 16, 18];
+// 1. sumę wszystkich elementów
+const sum = myArr.reduce((a, b) => a + b, 0);
+console.log(`The sum is: ${sum}.`);
 
-// 1. Suma wszystkich elementow
-let sum = myArr.reduce(function(a,b) {
-     return (a+b);
-
-       }, 0 );
-console.log(sum);
-
-// 2. Roznica wszystkich elementow
+// 2. różnicę wszystkich elementów
 console.log("my last element is: ", myArr[myArr.length-1])
 
-// 3. Srednia wszytskich elementow
-const array = [2, 4, 6, 45, 57, 103];
-function getAvg(array) {
-  const total = array.reduce((acc, c) => acc + c, 0);
-  return total / array.length;
-}
-const average = getAvg(array);
-console.log(average);
-  
-// 4. Elementy parzyste
-function question0(){ 
-  for (let i = 0; i < array.length; i++){
-    if (array[i] % 2 === 0){
-      myArr.push(array[i]);
+// 3. średnią wszystkich elementów
+const avg = (sum / myArr.length) || 0;
+console.log(`The average is: ${avg}.`);
+
+// 4. elementy parzyste
+let evenArr = [];
+for (var i = 0; i < myArr.length; i++) {
+    if(myArr[i] % 2 === 0) { // index is even
+        evenArr.push(myArr[i]);
     }
-  }
-  return myArr;
 }
+console.log(`The even numbers are: ${evenArr}.`);
 
-// 5.Elementy nieparzyste
-let odd = myArr.filter((e,i)=>i%2);
-console.log(filtered);
+// 5. elementy nieparzyste
+let oddArr = []
+for (var i = 0; i < myArr.length; i++) {
+    if(myArr[i] % 2 === 1) { // index is even
+        oddArr.push(myArr[i]);
+    }
+}
+console.log(`The odd numbers are: ${oddArr}.`);
 
-// 6. Najwieksza liczbe
-console.log(Math.max(...myArr));
+// 6. największą liczbę
+var max_num = Math.max.apply(Math, myArr);
+console.log(`The max number is: ${max_num}.`);
 
-// 7. Najmniejsza liczbe'
-console.log(Math.min(...myArr));
+// 7. najmniejszą liczbę
+var min_num = Math.min.apply(Math, myArr);
+console.log(`The min number is: ${min_num}.`);
 
-// 8. Tablica od tylu
-myArr.reverse();
-console.log(myArr);
+// 8. wypisz tablicę od tyłu
+var reverse_myArr = myArr.reverse();
+console.log(`The reverse array is: ${reverse_myArr}.`);
 ```
 
 #### Zadanie 4
 
 Napisz funkcję która przyjmie jako parametr tablice liczb. Zwróć do konsoli sumę wszystkich liczb.
+
 
 #### Zadaie 5
 
