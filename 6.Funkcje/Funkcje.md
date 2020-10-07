@@ -3,7 +3,10 @@
 Napisz funkcję która wypisuje w konsoli "Udało się!"
 
 ```
-console.log("Udało się!");
+function text(){
+    console.log('Udalo sie')
+}
+text();
 ```
 
 #### Zadanie 2
