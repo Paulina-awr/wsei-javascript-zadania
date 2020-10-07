@@ -85,7 +85,7 @@ console.log(`The average is: ${avg}.`);
 // 4. elementy parzyste
 let evenArr = [];
 for (var i = 0; i < myArr.length; i++) {
-    if(myArr[i] % 2 === 0) { // index is even
+    if(myArr[i] % 2 === 0) { // value is even
         evenArr.push(myArr[i]);
     }
 }
@@ -93,8 +93,8 @@ console.log(`The even numbers are: ${evenArr}.`);
 
 // 5. elementy nieparzyste
 let oddArr = []
-for (var i = 0; i < myArr.length; i++) {
-    if(myArr[i] % 2 === 1) { // index is even
+for (var i = 0; i < myArr.length; i++) { 
+    if(myArr[i] % 2 === 1) { // value is odd
         oddArr.push(myArr[i]);
     }
 }
@@ -142,10 +142,34 @@ console.log(multiArr(myArr));
 #### Zadanie 6
 
 Napisz funkcję która zwraca średnią liczb parzystych z tablicy którą przekażesz jako parametr tej funkcji.
+```
+let myArr = [1, 5, 6, 8, 11, 12, 13, 16, 18];
+
+function evenNumAvg(arr) {
+    let evenArr = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (myArr[i] % 2 === 0) {
+            evenArr.push(arr[i]);
+        }
+    }
+    const sum = evenArr.reduce((a, b) => a + b, 0);
+    const avg = sum / evenArr.length || 0;
+
+    return avg;
+}
+console.log(evenNumAvg(myArr));
+```
 
 #### Zadanie 7
 
 Posortuj tablicę przekazaną jako parametr do funkcji. Wypisz ją w konsoli
+```
+let myArr = [14, 5, 63, 8, 111, 12, 2, 16, 9];
+myArr.sort(function (a, b) {
+    return a - b;
+});
+console.log(myArr);
+```
 
 #### Zadanie 8
 
