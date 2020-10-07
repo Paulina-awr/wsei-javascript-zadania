@@ -34,8 +34,25 @@ newArr = myArr.filter(function(value, index, Arr) {
 });
 console.log("Every second elements are", newArr)
 // 5. Wszystkie stringi
-
-// 6. Wszystkie numbery 
+myArr = [2, 4, 6, "Krakow", "Warszawa", "Poznan"];
+emptyArr = []
+var i;
+for (i = 0; i < myArr.length; i++) {
+    if (typeof myArr[i] === "string") {
+        emptyArr.push(myArr[i])
+    }
+}
+console.log(emptyArr)
+// 6. Wszystkie numbery
+myArr = [2, 4, 6, "Krakow", "Warszawa", "Poznan"];
+emptyArr = []
+var i;
+for (i = 0; i < myArr.length; i++) {
+    if (typeof myArr[i] === "number") {
+        emptyArr.push(myArr[i])
+    }
+}
+console.log(emptyArr)
 ```
 
 #### Zadanie 3
@@ -52,6 +69,7 @@ Stwórz tablicę tylko z elementami typu number. W konsoli wypisz:
 8. wypisz tablicę od tyłu
 
 * nie rozpatrujemy warunków brzegowych. Liczby nie powtarzają się.
+```
 let myArr = [2, 4, 6, 45, 57, 103]
 
 // 1. Suma wszystkich elementow
@@ -66,19 +84,15 @@ console.log("my last element is: ", myArr[myArr.length-1])
 
 // 3. Srednia wszytskich elementow
 const array = [2, 4, 6, 45, 57, 103];
-
 function getAvg(array) {
   const total = array.reduce((acc, c) => acc + c, 0);
   return total / array.length;
 }
-
 const average = getAvg(array);
 console.log(average);
-    
+  
 // 4. Elementy parzyste
- 
-function question0(){
- 
+function question0(){ 
   for (let i = 0; i < array.length; i++){
     if (array[i] % 2 === 0){
       myArr.push(array[i]);
@@ -86,22 +100,21 @@ function question0(){
   }
   return myArr;
 }
-// 5.Elementy nieparzyste
 
+// 5.Elementy nieparzyste
 let odd = myArr.filter((e,i)=>i%2);
 console.log(filtered);
 
 // 6. Najwieksza liczbe
-
 console.log(Math.max(...myArr));
 
 // 7. Najmniejsza liczbe'
-
 console.log(Math.min(...myArr));
 
 // 8. Tablica od tylu
 myArr.reverse();
 console.log(myArr);
+```
 
 #### Zadanie 4
 
