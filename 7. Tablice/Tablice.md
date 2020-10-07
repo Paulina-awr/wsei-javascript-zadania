@@ -116,11 +116,28 @@ console.log(`The reverse array is: ${reverse_myArr}.`);
 #### Zadanie 4
 
 Napisz funkcję która przyjmie jako parametr tablice liczb. Zwróć do konsoli sumę wszystkich liczb.
+```
+let myArr = [3, 6, 8, 4, 7]
+var sumArr = myArr.reduce(function(a, b){return a+b;})
+console.log(sumArr)
+```
 
-
-#### Zadaie 5
+#### Zadanie 5
 
 Napisz funkcję która przyjmuje jako parametr tablicę liczb. Następnie wypisz w konsoli wszystkie elementy tej tablicy pomnożone przez średnią tablicy
+```
+let myArr = [1, 5, 6, 8, 11, 12, 13, 16, 18];
+
+function multiArr(arr) {
+    const sum = arr.reduce((a, b) => a + b, 0);
+    const avg = (sum / arr.length) || 0;
+    
+    newArr = arr.map(x => x * avg);
+    
+    return newArr
+}
+console.log(multiArr(myArr));
+```
 
 #### Zadanie 6
 
