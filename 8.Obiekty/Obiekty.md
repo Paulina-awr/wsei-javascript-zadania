@@ -1,6 +1,22 @@
 #### Zadanie 1
 
 Stwórz obiekt car i dopisz do niego różne właściwości. Wypisz właściwości w konsoli
+```
+let car = {
+    name: 'Tesla',
+    age: 2,
+    mileage: 20000,
+    addMileage: function(age) {
+        this.mileage += mileage;
+        
+    }
+    
+}
+console.log(car); //Tesla
+car.model = 'C5';
+console.log(car);
+
+```
 
 #### Zadanie 2
 
