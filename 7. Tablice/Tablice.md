@@ -175,6 +175,18 @@ console.log(myArr);
 
 Napisz funkcję która będzie zwracać tablicę która będzie sumą indeksów dwóch tablic przekazanych jako parametry funkcji.
 
+```
+function arrSum(...arrays) {
+  const n = arrays.reduce((max, xs) => Math.max(max, xs.length), 0);
+  const result = Array.from({ length: n });
+  return result.map((_, i) => arrays.map(xs => xs[i] || 0).reduce((sum, x) => sum + x, 0));
+}
+
+arr1 = [2, 4, 6, 8]
+arr2 = [7, 5, 3, 1]
+console.log(arrSum(arr1, arr2))
+```
+
 #### Zadanie 9
 
 Napisz funkcję która przyjmie jako parametr tablice oraz element tablicy. Następnie funkcja ma zwrócić nową tablicę na podstawie pierwszego parametru ale bez elementu z drugiego parametru
