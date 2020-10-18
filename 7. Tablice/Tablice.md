@@ -182,14 +182,25 @@ function arrSum(...arrays) {
   return result.map((_, i) => arrays.map(xs => xs[i] || 0).reduce((sum, x) => sum + x, 0));
 }
 
-arr1 = [2, 4, 6, 8]
-arr2 = [7, 5, 3, 1]
+let arr1 = [2, 4, 6, 8]
+let arr2 = [7, 5, 3, 1]
 console.log(arrSum(arr1, arr2))
 ```
 
 #### Zadanie 9
 
 Napisz funkcję która przyjmie jako parametr tablice oraz element tablicy. Następnie funkcja ma zwrócić nową tablicę na podstawie pierwszego parametru ale bez elementu z drugiego parametru
+
+```
+function numArr(number) {
+    numArr = Array(number).fill(0).reduce(arr=>{ 
+        arr.push(arr.length); return arr},[])
+    return numArr
+};
+
+console.log(numArr(10));
+```
+
 
 #### Zadanie 10
 
