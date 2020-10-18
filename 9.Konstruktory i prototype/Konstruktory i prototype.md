@@ -29,10 +29,22 @@ function Person(imie, nazwisko, wiek, kraj, miasto, jezyk) {
 var person1 = new Person("John", "Doe", 50, "Polska", "Krakow", "Polski");
 console.log(person1)
 
+var person2 = new Person("Konrad", "Kita", 34, "Polska", "Warszawa", "Polski");
+console.log(person2)
+
+var person3 = new Person("Barbara", "Nowak", 67, "Polska", "Poznan", "Polski");
+console.log(person3)
+
+var person4 = new Person("Wojtek", "Mark", 12, "Polska", "Lodz", "Polski");
+console.log(person4)
+
+var person5 = new Person("Marta", "Czowiek", 23, "Polska", "Kielce", "Polski");
+console.log(person5)
+
 person1.changeWeik(30)
 console.log(person1)
 
-person1.changeMiasto("Warsaw")
+person1.changeMiasto("Warszawa")
 console.log(person1)
 ```
 
