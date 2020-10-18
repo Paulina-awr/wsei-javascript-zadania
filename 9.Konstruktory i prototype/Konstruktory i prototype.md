@@ -10,6 +10,31 @@ Stwórz konstruktor Person z następującymi właściwościami:
 6. Język
 
 Wszystkie te właściwości powinny pochodzić z parametrów przekazanych przez użytkownika w wywołaniu konstruktora. Następnie dopisz metody które będą modyfikować wiek oraz miasto. Pamiętaj o reużywalności kodu i oszczędzaniu pamięci. Wywołaj konstruktor Person na minimum 5 różnych osobach. Następnie zmień im wiek oraz miasto i sprawdź jak zachowują się obiekty.
+```
+function Person(imie, nazwisko, wiek, kraj, miasto, jezyk) {
+    this.imie = imie;
+    this.nazwisko = nazwisko;
+    this.wiek = wiek;
+    this.kraj = kraj;
+    this.miasto = miasto;
+    this.jezyk = jezyk;
+    this.changeWeik = function (newWiek) {
+        this.wiek = newWiek;
+    };
+    this.changeMiasto = function (newMiasto) {
+        this.miasto = newMiasto;
+    };
+}
+
+var person1 = new Person("John", "Doe", 50, "Polska", "Krakow", "Polski");
+console.log(person1)
+
+person1.changeWeik(30)
+console.log(person1)
+
+person1.changeMiasto("Warsaw")
+console.log(person1)
+```
 
 #### Zadanie 2
 
