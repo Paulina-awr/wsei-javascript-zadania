@@ -205,3 +205,14 @@ console.log(numArr(10));
 #### Zadanie 10
 
 Napisz funkcję która przyjmuje jako parametr tablicę z numberami a następnie zwraca nową tablicę na podstawie parametru gdzie każdy element tablicy ma odwrotny znak.
+```
+let negArr = []
+let arr = [1, 2, 3, 4]
+
+arr.forEach(function (item, index) {
+    negNum = -Math.abs(item)
+    negArr.push(negNum); 
+});
+
+console.log(negArr)
+```
