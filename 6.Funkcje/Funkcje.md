@@ -14,11 +14,10 @@ text();
 Napisz funkcję która przyjmuje dowolny parametr i wyświetla go w konsoli
 
 ```
-function greet(person) {
-  console.log("Hello " + person);
+function printParam(str){
+    console.log(str);
 }
-greet("Mia");
-console.log("Bye");
+printParam('Hello');
 ```
 
 #### Zadanie 3
