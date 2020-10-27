@@ -1,12 +1,12 @@
 #### Zadanie 1
 
 W konsoli stwórz dwie zmienne i przypisz do nich dwie wartości boolean. Porównaj je za pomocą odpowiedniego operatora.
-
+```
 let hot = true;
 let cold = false;
 
 console.log(hot == cold);
-
+```
 
 
 #### Zadanie 2
@@ -25,13 +25,13 @@ console.log(moduloResult);
 #### Zadanie 3
 W konsoli stwórz trzy zmienne. Dwie niech przechowują dowolne stringi, a jedna o nazwie ```stringsResult```, niech przechowuje pusty string np. ```let stringsResult = ""```
 Połącz stringi za pomocą konkatenacji i zapisz wynik w zmiennej ```stringsResult``` oraz wypisz go w konsoli.
-
+```
 var someNumber = "42";
 var someString = "345";
 let stringsResult = ""
 stringsResult = someNumber + someString
 console.log(stringsResult);
-
+```
 
 #### Zadanie 4
 W konsoli stwórz dwie zmienne:
@@ -40,11 +40,13 @@ W konsoli stwórz dwie zmienne:
 var someNumber = 425;
 var someString = "425";
  ```
+ 
+ ````
  var someNumber = 425;
 var someString = "425";
 console.log(someNumber == someString);    Jest TRUE, poniewaz zmienne maja taka sama wartosc.
 console.log(someNumber === someString);    Jest FALSE , poniewaz maja dwa rozne typy. Jedna zmienna jest int, a druga zmienna string.
-
+````
 
 Porównaj te zmienne za pomocą operatorów ```==``` oraz ```===```.
 Wypisz wyniki w konsoli. Opowiedz grupie o wynikach
@@ -59,7 +61,7 @@ Wypisz jej wartość w konsoli, a następnie:
 * wypisz ją w konsoli
 * za pomocą dekrementacji zmniejsz wartość zmiennej ```counter```
 * wypisz ją w konsoli.
-
+```
 let counter = 30;
 
 console.log(counter);
@@ -71,11 +73,12 @@ console.log(counter);
 counter--;
 
 console.log(counter);
+```
 
 #### Zadanie 6
 
 W konsoli stwórz trzy zmienne. Dwie niech przechowują dowolne liczby, a jedna o nazwie ```result```, niech przechowuje ```null```. Sprawdź czy liczba pierwsza jest większa od drugiej za pomocą odpowiedniego operatora i zapisz wynik w zmiennej ```result```. Wypisz tą zmienną w konsoli.
-
+```
 let variable_1 = 40;
 let variable_2 = 23;
 let result = null;
@@ -84,4 +87,4 @@ result = variable_1 > variable_2;
 
 console.log(result);
 
-
+```
